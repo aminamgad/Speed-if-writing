@@ -114,6 +114,12 @@ body{
 .finish .good{
     color: var(--main-color);
 }
+h5{
+    margin-left: 405px;
+    font-size: 15px;
+    color: #e2d6d6;
+}
+
 .finish .bad{
     color: red;
 }
