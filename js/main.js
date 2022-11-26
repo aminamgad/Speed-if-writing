@@ -99,9 +99,9 @@ function Normal() {
     easy.style.backgroundColor = "";
     timeLeftSpan.className="Normal";
     }
-    lvlNameSpan.innerHTML = defaultLevelName;
-    secondsSpan.innerHTML = defaultLevelSeconds;
-    timeLeftSpan.innerHTML= defaultLevelSeconds;
+    lvlNameSpan.innerHTML = easyLevelName;
+    secondsSpan.innerHTML = easytLevelSeconds;
+    timeLeftSpan.innerHTML= easytLevelSeconds;
     scoreTotal.innerHTML =words.length;
     normal.style.backgroundColor = "#2196f3";
     hard.style.backgroundColor = "";
@@ -161,7 +161,7 @@ function startPlay(){
 //      }else if (timeLeftSpan.className= "hard") {
 //        timeLeftSpan.innerHTML=200;
 // }
-timeLeftSpan.innerHTML=3;
+timeLeftSpan.innerHTML=easyLevelSecond;
      let start = setInterval(() => {
          timeLeftSpan.innerHTML--;
         if (timeLeftSpan.innerHTML === "0"){
