@@ -100,14 +100,13 @@ function Normal() {
     timeLeftSpan.className="Normal";
     }
     lvlNameSpan.innerHTML = easyLevelName;
-    secondsSpan.innerHTML = easytLevelSeconds;
-    timeLeftSpan.innerHTML= easytLevelSeconds;
-    scoreTotal.innerHTML =words.length;
-    normal.style.backgroundColor = "#2196f3";
-    hard.style.backgroundColor = "";
-    easy.style.backgroundColor = "";
-    timeLeftSpan.className="Normal";
-
+secondsSpan.innerHTML = easyLevelSeconds;
+timeLeftSpan.innerHTML= easyLevelSeconds;
+scoreTotal.innerHTML =words.length;
+easy.style.backgroundColor = "#2196f3";
+hard.style.backgroundColor = "";
+normal.style.backgroundColor = "";
+timeLeftSpan.className="Easy";
 
 
 
