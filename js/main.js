@@ -70,7 +70,7 @@ function NewGame(){
 
 
 function Easy() {
-    lvlNameSpan.innerHTML = easyLevelName;
+lvlNameSpan.innerHTML = easyLevelName;
 secondsSpan.innerHTML = easyLevelSeconds;
 timeLeftSpan.innerHTML= easyLevelSeconds;
 scoreTotal.innerHTML =words.length;
@@ -100,13 +100,15 @@ function Normal() {
     timeLeftSpan.className="Normal";
     }
     lvlNameSpan.innerHTML = easyLevelName;
-secondsSpan.innerHTML = easyLevelSeconds;
-timeLeftSpan.innerHTML= easyLevelSeconds;
-scoreTotal.innerHTML =words.length;
-easy.style.backgroundColor = "#2196f3";
-hard.style.backgroundColor = "";
-normal.style.backgroundColor = "";
-timeLeftSpan.className="Easy";
+    secondsSpan.innerHTML = easyLevelSeconds;
+    timeLeftSpan.innerHTML= easyLevelSeconds;
+    scoreTotal.innerHTML =words.length;
+    easy.style.backgroundColor = "#2196f3";
+    hard.style.backgroundColor = "";
+    normal.style.backgroundColor = "";
+    timeLeftSpan.className="Easy";
+    
+
 
 
 
@@ -160,7 +162,7 @@ function startPlay(){
 //      }else if (timeLeftSpan.className= "hard") {
 //        timeLeftSpan.innerHTML=200;
 // }
-timeLeftSpan.innerHTML=easyLevelSecond;
+timeLeftSpan.innerHTML=easyLevelSeconds;
      let start = setInterval(() => {
          timeLeftSpan.innerHTML--;
         if (timeLeftSpan.innerHTML === "0"){
@@ -188,7 +190,7 @@ timeLeftSpan.innerHTML=easyLevelSecond;
                 setInterval(() => {
                   //  document.querySelector(".name").innerHTML+="." ;
 
-                    location.reload();
+                   // location.reload();
                     
                 }, 2000);
             }
