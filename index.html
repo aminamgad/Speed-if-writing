@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="game">
+    <div class="name">Typing speed Test Game</div>
+    <div class="levels row">
+        <bytton data-level="hard" onclick="Hard()" class="hard col-sm-4">Hard</bytton>
+        <bytton data-level="normal"  onclick="Normal()" class="normal col-sm-4">Normal</bytton>
+        <bytto data-level="easy" n onclick="Easy()" class="easy col-sm-4">Easy</bytton>
+    </div>
+    <div class="container">
+        <div class="message">
+            You are playing on 
+            <span class="lv1"></span>  Level & You Have <span class="seconds"></span> Seconds To Type The word
+        </div>
+        <div class="start">Start Playing</div>
+        <div class="the-word"></div>
+        <input type="text" class="input">
+        <div class="upcoming-words">words will show Here</div>
+        <div class="control">
+            <div class="time">Time left: <span></span> Seconds</div>
+            <div class="score">Score: <span class="got">0</span> From <span class="total"></span></div>
+        </div>
+        <div class="finish"></div>
+        <div class="newGame" onclick="NewGame()">New Game</div>
+    </div>
+</div>
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <!--install for icons-->
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
